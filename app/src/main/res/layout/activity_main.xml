@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Inscripción de UTP"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/apellidoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido" />
+
+    <TextView
+        android:id="@+id/cursoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Curso" />
+
+    <Spinner
+        android:id="@+id/cursoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/formaPagoRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/contadoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contado"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/creditoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crédito" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/cuotasSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 cuotas" />
+
+    <Button
+        android:id="@+id/inscribirButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscribir" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
